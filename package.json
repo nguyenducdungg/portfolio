@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint --ext js,jsx,ts,tsx app/ pages/ components/ lib/",
     "lint:fix": "eslint --fix --ext js,jsx,ts,tsx app/ pages/ components/ lib/",
+    "check-types": "tsc --pretty --noEmit",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "pre-commit": "pnpm run lint"
