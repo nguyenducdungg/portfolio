@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Index = () => {
+const Atom = () => {
   return (
-    <div>index</div>
+    <div>Atom</div>
   )
 }
-export default Index
+export default Atom
