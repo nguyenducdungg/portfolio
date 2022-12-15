@@ -12,5 +12,5 @@ export default function handler(
   if (req.method === 'GET')
     res.status(200).json({ name: 'John Doe' })
   else
-    res.status(200).json({ name: 'Nam' })
+    res.status(200).json({ name: 'Roman' })
 }

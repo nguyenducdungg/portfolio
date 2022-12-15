@@ -16,6 +16,7 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a href="https://beta.nextjs.org/docs" className={styles.card}>
+            <span>asdasda</span>
             <h2>Documentation &rarr;</h2>
             <p>Find in-depth information about Next.js 13</p>
           </a>
