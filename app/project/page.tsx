@@ -4,7 +4,6 @@ import { fetcher } from '../../lib/fetcher'
 
 export default function Home() {
   const { data, isLoading } = useSWR('/api/hello', (url: string) => fetcher(url, { method: 'GET' }))
-  console.log(data)
 
   return (!isLoading
     && <>
