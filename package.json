@@ -10,8 +10,7 @@
     "lint:fix": "eslint --fix --ext js,jsx,ts,tsx app/ pages/ components/ lib/",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "prepare": "husky install",
-    "pre-commit": "npm run lint && npm run test"
+    "pre-commit": "pnpm run lint"
   },
   "dependencies": {
     "@antfu/eslint-config": "^0.25.2",
@@ -36,7 +35,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run pre-commit"
+      "pre-commit": "pnpm run pre-commit"
     }
   }
 }
