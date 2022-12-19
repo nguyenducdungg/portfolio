@@ -1,3 +1,4 @@
+import Footer from 'template/Footer/Footer'
 import '../styles/index.scss'
 
 export default function RootLayout({
@@ -12,7 +13,11 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+      <body>
+        <div>Header</div>
+        <div>{children}</div>
+        <Footer/>
+      </body>
     </html>
   )
 }

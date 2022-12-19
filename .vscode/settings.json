@@ -18,9 +18,9 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  // "files.associations": {
-  //   "*.css": "css",
-  // },
+  "files.associations": {
+    "*.css": "css"
+  },
   "editor.formatOnSave": false,
   "typescript.tsdk": "node_modules/.pnpm/typescript@4.9.4/node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true

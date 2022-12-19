@@ -1,14 +1,52 @@
+$mobile-width: 32.25em;
+$tablet-width: 56.25em;
+$desktop-width: 80em;
 
-$tablet-width: 850px;
-$svh: 100vh;
+$base-color: #FFD530;
+$base-light: #FFE075;
+$base-sLight: #FFE293;
+$black: #101010;
+$white: #ffffff;
+$al-white: #f9f9f9;
+$grey: #424242;
+$light-grey: #C4C4C4;
+$slight-grey: #eeeeee;
+$green: #2ED06E;
+$light-green: #4AE800;
+$slight-green: #76FF03;
+$red: #EB533F;
+$dark-red: #C22E2E;
+$blue: #2C4FFE;
+$light-blue: #7FB2FF;
+$slight-blue: #0057FF;
+$grad-blue: #0d1b57;
+$grad-pink: #fcb8b0;
+$dark-blue: #0A17A7;
+$orange: #FF9900;
+$purple: #640BBD;
+$purple-light: #C6B1FF;
+
+$bold: 600;
+$semi-bold: 500;
+$normal: 400;
+$light: 300;
+
+$contain: 75em;
+
 @mixin mobile {
-  @media only screen and (max-width: $mobile-width) {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$tablet-width}) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media only screen and (min-width: $tablet-width) {
+  @media (max-width: #{$desktop-width}) {
     @content;
   }
 }
